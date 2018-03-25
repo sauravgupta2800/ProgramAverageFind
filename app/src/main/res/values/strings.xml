@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Programming Track</string>
+    <string name="inputstringerror">It should be only space separated Integers</string>
+</resources>

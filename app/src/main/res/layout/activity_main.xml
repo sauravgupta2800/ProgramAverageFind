@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.saurabh.programaveragefind.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#008182"
+        android:gravity="center">
+        <com.hanks.htextview.line.LineTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="PROGRAMMING \n       TRACK"
+            android:textSize="26sp"
+            android:fontFamily="cursive"
+            app:animationDuration="3000"
+            app:lineColor="@android:color/white"
+            app:lineWidth="4dp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the Size of an Array"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:fontFamily="cursive"
+        android:background="#581845"
+        android:textColor="#fff"/>
+
+    <!--Spinner-->
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:popupBackground="#FFFF99"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert the space separated Values"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:fontFamily="cursive"
+        android:background="#C70039"
+        android:textColor="#fff"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/usernameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/inputString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|phone"
+            android:hint="Input String"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--Images -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/run"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:padding="3dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/start"
+            android:layout_marginLeft="50dp"/>
+        <ImageView
+            android:id="@+id/reset"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:padding="3dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/reset"
+            android:layout_marginRight="50dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mean : 20"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:background="@drawable/banner"/>
+
+</LinearLayout>
